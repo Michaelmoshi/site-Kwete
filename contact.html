@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Ici on charge dynamiquement le header -->
+    <div id="header"></div>
+
+    <!-- Contenu principal -->
+    <main>
+      <!-- Adhésion -->
+      <section id="adhesion">
+        <div class="adhesion-header">
+          <h2>Contactez Harmonia</h2>
+          <p>
+            Vous avez un projet d’aménagement ou souhaitez transformer votre
+            intérieur ? Notre équipe est à votre écoute pour vous conseiller et
+            vous accompagner. Remplissez ce formulaire et nous vous
+            recontacterons rapidement pour donner vie à vos idées.
+          </p>
+        </div>
+
+        <form
+          action="https://formspree.io/f/meoznbyg"
+          method="POST"
+          class="adhesion-form"
+        >
+          <input
+            type="text"
+            name="Nom complet"
+            placeholder="Nom complet"
+            required
+          />
+          <input
+            type="email"
+            name="Email"
+            placeholder="Adresse email"
+            required
+          />
+          <input
+            type="tel"
+            name="Téléphone"
+            placeholder="Numéro de téléphone"
+            pattern="[0-9+\-\s]{7,15}"
+            required
+          />
+          <textarea
+            name="Détails"
+            placeholder="Détails ou message"
+            rows="4"
+          ></textarea>
+          <button type="submit" class="btn">Envoyer</button>
+        </form>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Nous Contacter</h2>
+        <div class="contact-info">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.863921653264!2d15.330057215292516!3d-4.327291096145981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3b07dfe5b2d5%3A0xfbd79843dce91b9e!2sKinshasa%2C%20RD%20Congo!5e0!3m2!1sfr!2scd!4v1691522000000!5m2!1sfr!2scd"
+            width="450"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localisation PNRD"
+          ></iframe>
+          <div>
+            <p>
+              <strong>Adresse :</strong> Avenue RTNC n°1, Quartier Sans-fil,
+              Commune Masina, Kinshasa, RDC
+            </p>
+            <p><strong>Réseaux sociaux :</strong></p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/PNRD"
+                target="_blank"
+                class="social-link facebook"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://twitter.com/PNRD"
+                target="_blank"
+                class="social-link twitter"
+                aria-label="X (Twitter)"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/PNRD"
+                target="_blank"
+                class="social-link instagram"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://wa.me/243817661504"
+                target="_blank"
+                class="social-link whatsapp"
+                aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://youtube.com/pnrd"
+                target="_blank"
+                aria-label="YouTube"
+                class="social-link youtube"
+              >
+                <i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Ici on charge dynamiquement le footer -->
+    <div id="footer"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
